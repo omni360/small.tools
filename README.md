@@ -18,7 +18,7 @@ small.tools
 
 ```
 
-[BatchMergeDgnfile.txt](https://github.com/omni360/small.tools/blob/master/BatchMergeDgnfile.txt) --批处理合并图框文件.
+[BatchMergeDgnfile.txt](https://github.com/omni360/small.tools/blob/master/BatchMergeDgnfile.txt) --批处理合并参考文件.
 
 ```BatchMergeDgnfile
 // 批处理将dgn文件的参考文件*.i01,merge到当前dgn文件当中.
