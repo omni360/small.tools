@@ -39,4 +39,48 @@ var $input = $('#input'),
 -Apache Cordova是PhoneGap贡献给Apache后的开源项目，是从PhoneGap中抽出的核心代码，是驱动PhoneGap的核心引擎。你可以把他想象成类似于Webkit和Google Chrome的关系。
 ## Ionic
 -Ionic 底层打包使用 Cordova ( 和 Phonegap 一样 ) 底层打包用 Cordova 是不错的。 Ionic 是一个全堆栈的混合应用开发框架，可以理解成 Ionic = Cordova + AngularJS + Ionic UI
+## FileSaver.js
+-一个基于HTML5里saveAs()的实现，在客户端浏览器上保存生成的文件。
+ [参考网站](https://eligrey.com/)
+
+实例代码1：
+```javascript
+	saveAs(
+		new Blob(
+			[(new XMLSerializer).serializeToString(document)]
+			,{type:"applicattion/xhtml+xml;charset=" + document.characterSet}
+			)
+			,"document.xhtml"
+		);
+```
+实例代码2:
+```javascript
+	canvas.toBlob(function(blob){
+		saveAs(blob, filename);
+		});
+```
+## canvas-toBlob.js 
+- 一个将HTML5画布生成二进制数据的工具。里面带有函数```canvas.toBlob()``` 和 ```canvas.toBlobHD()```.
+## CryptoJS-JavaScript 加密算法。
+-CryptoJS(crypto.js)为JavaScript提供了各种各样的加密算法。目前以支持的算法包括：
+* MD5
+* SHA-1
+* SHA-256
+* AES
+* Rabbit
+* MARC4
+* HMAC
+	- HMAC-MD5
+	- HMAC-SHA1
+	- HMAC-SHA256
+* PBKDF2
+示例代码：
+```javascript
+var digest = Crypto.MD5("Message");
+
+var digestBytes = Crypto.MD5("Message", {asBytes: true});
+var digestString = Crypto.MD5("Message", { asString: true });
+```
+
+
 
