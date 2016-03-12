@@ -41,6 +41,7 @@
 		* jscs - javascript 代码风格管理工具.
 		* jshint - javascript 代码质量管理工具.
 		* tslint - typescript 代码风格质量工具.
+		* eslint - ESLint 是一个开源的JavaScript验证工具
 	* 语言和规范
 		* typescript
 		* babel
