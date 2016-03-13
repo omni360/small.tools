@@ -1,5 +1,12 @@
 # angular学习笔记
 ## 1.环境搭建-自动化和工业化开发环境.
+## angular2 工具链
+#＃# systemjs
+- 通用模块加载器，支持AMD、CommonJS、ES6等各种格式的JS模块加载
+#＃# es6-module-loader
+- ES6模块加载器，systemjs会自动加载这个模块。
+##＃ traceur
+- ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码。systemjs会自动加载 这个模块。
 开发工具框架
 	* 项目构建工具-yeoman
 		* generator-modern-web-dev 基于modern-web-dev-build的一个构建框架．
@@ -13,12 +20,12 @@
 		* watch-监控文件．
 	* 依赖管理工具
 		* npm nodejs 包管理工具
-		* bower twitter发布的依赖管理工具 
+		* bower twitter发布的依赖管理工具
 		* SystemJS: 模块儿加载器
 			-systemjs 是一个最小系统加载工具，用来创建插件来处理可替代的场景加载过程，包括加载 CSS 场景和图片，主要运行在浏览器和 NodeJS 中。它是 ES6 浏览器加载程序的的扩展，将应用在本地浏览器中。通常创建的插件名称是模块本身，要是没有特意指定用途，则默认插件名是模块的扩展名称。
-             
+
              通常它支持创建的插件种类有：
-             
+
              CSS System.import('my/file.css!')
              Image System.import('some/image.png!image')
              JSON System.import('some/data.json!').then(function(json){})
@@ -27,7 +34,7 @@
              WebFont System.import('google Port Lligat Slab, Droid Sans !font')
 
 		* Broserify: 在浏览器端使用类似于node的require()方式来组织javascript代码．
-		* jspm 
+		* jspm
 			*1. 是```SystemJS```通用的模块加载器的包管理器，基于动态ES6模块加载器．
 			*2. 直接从任意registry(比如npm或者github)加载任意模块格式(AMD,ES6,COMMONJS and globals).
 			*3. 开发环境，使用ES6(ECMAScript 6)加载模块化文件和插件．
@@ -61,7 +68,7 @@
 	* 其它测试工具框架
 		* Mocha
 			Mocha同时支持TDD,BDD风格的测试代码
-		* chain 
+		* chain
 		* sinon.js
 		* nodeunit
 		* meteor
@@ -76,10 +83,10 @@
 ##单元测试:Karma+PhantomJS+Mocha+Chai+Sinonjs
 ##端到端测试:Selenium+NightWatchjs+Chrome
 
-    
-			
+
+
 项目目录
-	
+
 
 基于Node.js，
 *prtractor　模拟用户的输入，鼠标操作
@@ -90,7 +97,7 @@ Model<------->Controller<------>View
 ```
 * 起源:1979年，
 * Model:数据模型层
-	*1. 
+	*1.
 * View:视图层，负责展示
 * Controller:业务逻辑和控制逻辑
 	*1. 不要视图去复用Controller,一个控制器一般只负责一小块视图
@@ -111,7 +118,7 @@ angularjs中有好多概念，例如:Config,Routes,Filter等，但一切从模�
 	* $scope是一个树形结构，与DOM标签平行.
 	* 子$scope对象会集成父$scope对象(一般位于ng-app上)
 	* $scope可以传播事件,类似DOM事件，可以向上也可以向下．
-	
+
 ```
 	Module
 		Config
@@ -170,4 +177,3 @@ myModule.directive("hello", function() {
 ###5.2详解Jasmine和Protractor
 
 $scope充当MVC中的Data-Model角色
-
