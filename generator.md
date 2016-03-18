@@ -15,4 +15,5 @@
 - 
 ## generator-m-ionic
 - Build mobile Cordova/PhoneGap apps quickly with the tools you love: Yeoman, Gulp, Bower, AngularJS, Ionic & of course Cordova. All in one sexy generator	
-
+## generator-jhipster
+Java + Spring + JPA + AngularJS complete dev stack  
