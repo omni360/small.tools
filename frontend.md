@@ -87,3 +87,5 @@ var digest = Crypto.MD5("Message");
 var digestBytes = Crypto.MD5("Message", {asBytes: true});
 var digestString = Crypto.MD5("Message", { asString: true });
 ```
+## asm.js
+[asm.js](http://asmjs.org/) 是一个非常容易优化的JavaScript子集。它可以在所有的浏览器中无插件运行，是移植C/C ++代码库，例如游戏引擎的一个非常好的选择。目前 Unity 3D 和 Unreal Engine（虚幻引擎）两家是这个方法的最大采用者。
