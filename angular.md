@@ -1,21 +1,22 @@
 # angular学习笔记
 ## 1.环境搭建-自动化和工业化开发环境.
 开发工具框架
-	* 项目构建工具-yeoman
-		* generator-modern-web-dev 基于modern-web-dev-build的一个构建框架．
-	* 代码编辑工具-够强大，足够灵活，支持zencoding(emmet),推荐SubLime,WebStorm,Atom
-	* 断点调试工具-Chrome,Angular Batarang,Angular Watcher,Webgl Inspector,THREE.js Inspector.
-	* 版本管理工具-Git,mysysgit,tortoisegit
-	* 代码合并和混淆工具－gulp,grunt,nodemon
-		* nodemon-可以用来监控node.js源代码的任何变化和自动重启服务器．
-		* uglify-代码混淆，
-		* concat-合并工具
-		* watch-监控文件．
-	* 依赖管理工具
-		* npm nodejs 包管理工具
-		* bower twitter发布的依赖管理工具 
-		* SystemJS: 模块儿加载器
-			-systemjs 是一个最小系统加载工具，用来创建插件来处理可替代的场景加载过程，包括加载 CSS 场景和图片，主要运行在浏览器和 NodeJS 中。它是 ES6 浏览器加载程序的的扩展，将应用在本地浏览器中。通常创建的插件名称是模块本身，要是没有特意指定用途，则默认插件名是模块的扩展名称。
+- 项目构建工具-yeoman
+- generator-modern-web-dev 基于modern-web-dev-build的一个构建框架．
+- 代码编辑工具-够强大，足够灵活，支持zencoding(emmet),推荐SubLime,WebStorm,Atom
+- 断点调试工具-Chrome,Angular Batarang,Angular Watcher,Webgl Inspector,THREE.js Inspector.
+ 
+- 版本管理工具-Git,mysysgit,tortoisegit
+- 代码合并和混淆工具－gulp,grunt,nodemon
+- nodemon-可以用来监控node.js源代码的任何变化和自动重启服务器．
+- uglify-代码混淆，
+- concat-合并工具
+- watch-监控文件．
+- 依赖管理工具
+- npm nodejs 包管理工具
+- bower twitter发布的依赖管理工具 
+- SystemJS: 模块儿加载器
+-systemjs 是一个最小系统加载工具，用来创建插件来处理可替代的场景加载过程，包括加载 CSS 场景和图片，主要运行在浏览器和 NodeJS 中。它是 ES6 浏览器加载程序的的扩展，将应用在本地浏览器中。通常创建的插件名称是模块本身，要是没有特意指定用途，则默认插件名是模块的扩展名称。
              
              通常它支持创建的插件种类有：
              
@@ -76,8 +77,6 @@
 ##单元测试:Karma+PhantomJS+Mocha+Chai+Sinonjs
 ##端到端测试:Selenium+NightWatchjs+Chrome
 
-    
-			
 项目目录
 	
 
@@ -88,11 +87,11 @@
 ```
 Model<------->Controller<------>View
 ```
-* 起源:1979年，
-* Model:数据模型层
+- 起源:1979年，
+- Model:数据模型层
 	*1. 
-* View:视图层，负责展示
-* Controller:业务逻辑和控制逻辑
+- View:视图层，负责展示
+- Controller:业务逻辑和控制逻辑
 	*1. 不要视图去复用Controller,一个控制器一般只负责一小块视图
 	*2. 不要在Controller中操作DOM,这不是控制器的职责.DOM的重绘非常的消耗资源．
 	*3. 不要在Controller里面做数据格式化，ng有很好用的表单．

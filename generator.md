@@ -9,3 +9,9 @@
 -　一个生成使用html5开发混合移动应用的generator
 ## generator-chrome-extension
 -　一个开发chrome扩展的generator
+## generator-tsnode
+- 一个使用typescript开发node服务器程序的generator
+## generator-ts
+- 一个typescript浏览器端开发的generator
+## generator-typescript-node
+- 一个typescript开发node服务器程序的generator

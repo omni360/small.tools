@@ -81,6 +81,13 @@ var digest = Crypto.MD5("Message");
 var digestBytes = Crypto.MD5("Message", {asBytes: true});
 var digestString = Crypto.MD5("Message", { asString: true });
 ```
-
+## closure-library google公司的web开发工具链。
+* javascript优化器
+- closure-compile
+* 全面的javascript库
+* closure模板引擎
+* closure样式检查和修改
+* 强化的样式表语言。
+## browser.js -返回用户浏览器版本信息。
 
 
