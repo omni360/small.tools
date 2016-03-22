@@ -17,7 +17,7 @@ var $input = $('#input'),
 	var throttled = keyups
 		.throttle(500/*ms */);
 	/* Now get only distinct values, so we eliminate the arrows and other control characters */
-	
+
 	var distinct =keyups
 		.distinctUntilChanged();
 ```
@@ -28,6 +28,12 @@ var $input = $('#input'),
 -Underscore 是一个 JavaScript 工具库，它提供了一整套函数式编程的实用功能，但是没有扩展任何 JavaScript 内置对象。 他解决了这个问题：“如果我面对一个空白的 HTML 页面，并希望立即开始工作，我需要什么？” 他弥补了 jQuery 没有实现的功能，同时又是 Backbone 必不可少的部分。
 ## lzma
 -一个Lempel-Ziv-Markov chain(7zip)压缩算法的javascript实现．
+## systemjs
+- 通用模块加载器，支持AMD、CommonJS、ES6等各种格式的JS模块加载
+## es6-module-loader
+- ES6模块加载器，systemjs会自动加载这个模块。
+## traceur
+- ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码。systemjs会自动加载 这个模块。
 ## style-loader
 -webpack 下加载样式表文件．
 ## css-loader
@@ -59,7 +65,7 @@ var $input = $('#input'),
 		saveAs(blob, filename);
 		});
 ```
-## canvas-toBlob.js 
+## canvas-toBlob.js
 - 一个将HTML5画布生成二进制数据的工具。里面带有函数```canvas.toBlob()``` 和 ```canvas.toBlobHD()```.
 ## CryptoJS-JavaScript 加密算法。
 -CryptoJS(crypto.js)为JavaScript提供了各种各样的加密算法。目前以支持的算法包括：
@@ -91,3 +97,5 @@ var digestString = Crypto.MD5("Message", { asString: true });
 ## browser.js -返回用户浏览器版本信息。
 
 
+## asm.js
+[asm.js](http://asmjs.org/) 是一个非常容易优化的JavaScript子集。它可以在所有的浏览器中无插件运行，是移植C/C ++代码库，例如游戏引擎的一个非常好的选择。目前 Unity 3D 和 Unreal Engine（虚幻引擎）两家是这个方法的最大采用者。

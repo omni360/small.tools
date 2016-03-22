@@ -13,10 +13,10 @@
 		* watch-监控文件．
 	* 依赖管理工具
 		* npm nodejs 包管理工具
-		* bower twitter发布的依赖管理工具 
+		* bower twitter发布的依赖管理工具
 		* SystemJS: 模块儿加载器
 		* Broserify: 在浏览器端使用类似于node的require()方式来组织javascript代码．
-		* jspm 
+		* jspm
 			*1. 是```SystemJS```通用的模块加载器的包管理器，基于动态ES6模块加载器．
 			*2. 直接从任意registry(比如npm或者github)加载任意模块格式(AMD,ES6,COMMONJS and globals).
 			*3. 开发环境，使用ES6(ECMAScript 6)加载模块化文件和插件．
@@ -41,8 +41,10 @@
 		* jscs - javascript 代码风格管理工具.
 		* jshint - javascript 代码质量管理工具.
 		* tslint - typescript 代码风格质量工具.
+		* eslint - ESLint 是一个开源的JavaScript验证工具
 	* 语言和规范
 		* typescript
+		* taceur - ES6转码器，将ES6代码转换为当前浏览器支持的ES5代码。sSystemJS会自动加载这个模块。
 		* babel
 		* dart
 		* closure
@@ -50,7 +52,7 @@
 	* 其它测试工具框架
 		* Mocha
 			Mocha同时支持TDD,BDD风格的测试代码
-		* chain 
+		* chain
 		* sinon.js
 		* nodeunit
 		* meteor
@@ -60,6 +62,5 @@
 				*2 CSS选择器
 				*3 JSON,Canvas,SVG.
 			PhantomJS可以用于　页面自动化，网络监测，网页截屏，以及无界面测试等．
-			
+
 项目目录
-	
